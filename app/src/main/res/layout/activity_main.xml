@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:context="com.example.harry2636.weatherdisplay.MainActivity"
+      android:id="@+id/mainLinear"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorBackground">
+    <LinearLayout
+        android:id="@+id/topHorLinear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+      <LinearLayout
+          android:id="@+id/topverLinear"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/cityName"
+            android:text="Test_City"
+            android:textColor="@color/textColor"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tempCondition"
+            android:text="Temp + Condition"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/hiLoTemp"
+            android:text="highTemp + lowTemp"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/pop"
+            android:text="Test Pop"
+            android:textColor="@color/textColor"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+      <ImageView
+          android:id="@+id/currentWeatherImg"
+          android:scaleType="fitCenter"
+          android:adjustViewBounds="true"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+      android:text="Daily Forecast"
+      android:textStyle="bold"
+      android:textColor="@color/textColor"
+      android:textAlignment="center"
+      android:textSize="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/centerHorLinear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Hourly Forecast"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/bottomHorLinear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+  </LinearLayout>
+
+
+
